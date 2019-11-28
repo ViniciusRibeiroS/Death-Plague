@@ -14,6 +14,7 @@ df = pd.DataFrame(columns= colunas)
 np.random.seed(19680801)
 # Peste Negra
 
+
 # Pulgas
 Pulgas_T = 6000
 Pulgas_I = 1. * Pulgas_T
@@ -91,10 +92,6 @@ for i in range(1, 10):
     teste2.append(Ratos_T)
     teste3.append(Humanos_T)
 
-    print(round(Pulgas_T, 2), round(Ratos_T, 2), round(Humanos_T, 2))
-
-    #print("\n");
-
 # add the values to the Dataframe
 df["Pulgas_T"] = teste
 df["Ratos_T"] = teste2
@@ -114,44 +111,3 @@ plt.ylabel("Total population of rats, humans and fleas")
 plt.title("Relationship between black plague, humans and fleas")
 
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""N = 150
-r = 2 * np.random.rand(N)
-theta = 2 * np.pi * np.random.rand(N)
-area = 200 * r**2
-colors = theta
-
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='polar')
-c = ax.scatter(theta, r, c=colors, s=area, cmap='hsv', alpha=0.75)
-ax.set_rorigin(-2.5)
-ax.set_theta_zero_location('W', offset=10)
-
-#ax.set_thetamin(45)
-#ax.set_thetamax(135)
-
-plt.show()"""
